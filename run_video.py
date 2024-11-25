@@ -62,7 +62,8 @@ def main(img_path, prompt, out_path):
         .run()
     )
 
-    # os.rmdir("./frames")
+    os.rmdir("./frames")
+    os.rmdir("./interpolated_frames")
 
 
 if __name__ == "__main__":

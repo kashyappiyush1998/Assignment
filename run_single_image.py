@@ -18,7 +18,7 @@ def main(img_path, prompt):
 
     image = Image.open(img_path)
     mask_image = image.split()[-1]
-
+    mask_image = ImageOps.invert(mask_image)
     mask_image = ImageOps.expand(mask_image,border=border,fill='white')
     image = image.convert('RGB')
     image = ImageOps.expand(image,border=border,fill='black')

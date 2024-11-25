@@ -1,0 +1,4 @@
+ffmpeg-python
+pillow
+torch
+diffusers
